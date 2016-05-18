@@ -1,0 +1,24 @@
+;# I am a comment line
+; var_string = 'three' # I am a comment too
+; var_list = ['one', 'two', "$var_string"] 
+; var_loop = 5
+; var_cond = 1
+; FOREACH item IN var_list
+    There is $item in the list.
+; END
+
+; FOREACH item IN [1..8]
+    Count ${item}.
+; END
+
+; var_total = 0
+; WHILE (var_total < var_loop)
+    Total is $var_total now.
+;   var_total = var_total + 1
+; END
+
+; file = 'include/tpp_inc.tt'
+; IF (var_cond == 1)
+; INCLUDE $file     
+; ELSE
+; END
